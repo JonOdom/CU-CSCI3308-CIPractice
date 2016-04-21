@@ -1,2 +1,4 @@
+sudo: required
+before_install: sudo apt-get -qq update && sudo apt-get install check
 language: c
-compiler: gcc
+script: make && make test
